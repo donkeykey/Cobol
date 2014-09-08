@@ -1,0 +1,4 @@
+BLESerialSample
+===============
+
+iOSでBLESerialを使うときのサンプルコード
