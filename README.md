@@ -1,4 +1,4 @@
-BLESerialSample
+Cobol
 ===============
 
-iOSでBLESerialを使うときのサンプルコード
+地上の星、Cobol
