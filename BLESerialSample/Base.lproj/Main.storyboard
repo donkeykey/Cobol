@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwQ-jN-bwS">
-                                <rect key="frame" x="131" y="155" width="59" height="30"/>
+                                <rect key="frame" x="16" y="28" width="59" height="30"/>
                                 <state key="normal" title="Connect">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjR-z5-Sms">
-                                <rect key="frame" x="121" y="269" width="78" height="30"/>
+                                <rect key="frame" x="121" y="28" width="78" height="30"/>
                                 <state key="normal" title="Disconnect">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -36,12 +36,124 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idj-pP-FRv">
-                                <rect key="frame" x="124" y="364" width="73" height="30"/>
-                                <state key="normal" title="Send Char">
+                                <rect key="frame" x="16" y="80" width="97" height="60"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.98823535439999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="White">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onTouchSendBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="A3d-qE-vaf"/>
+                                    <action selector="onTouchWhite:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IGc-rj-ok2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zj0-iY-J1E">
+                                <rect key="frame" x="207" y="80" width="97" height="60"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.98823535439999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Solid">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchSolid:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Jg-Ug-81D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBU-Nb-FBI">
+                                <rect key="frame" x="207" y="148" width="97" height="60"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.98823535439999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Flash">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchFlash:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VnN-s5-sYR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVa-TV-NUv">
+                                <rect key="frame" x="207" y="216" width="97" height="60"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.98823535439999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Fade">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchFade:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XZU-2w-WYw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMk-dP-5Vl">
+                                <rect key="frame" x="207" y="284" width="97" height="60"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.98823535439999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Rotate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchRotate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pqk-dr-fs6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etd-gb-uF9">
+                                <rect key="frame" x="16" y="148" width="97" height="60"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.98823535439999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchRed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Zq-x3-4Gl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBA-hc-C8F">
+                                <rect key="frame" x="16" y="216" width="97" height="60"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.98823535439999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchGreen:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0rx-ZU-huJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btb-Do-IdR">
+                                <rect key="frame" x="16" y="284" width="97" height="60"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.98823535439999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchBlue:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NUS-zf-Zb7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG5-GS-3S9">
+                                <rect key="frame" x="16" y="352" width="97" height="60"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.98823535439999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Yellow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchYellow:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CIT-xU-gVb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruw-nv-6lh">
+                                <rect key="frame" x="16" y="420" width="97" height="60"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.98823535439999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Pink">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchPink:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cE5-se-F4t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRA-Sw-ec2">
+                                <rect key="frame" x="16" y="488" width="97" height="60"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.98823535439999999" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Skyblue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchSkyblue:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pxj-3O-HZV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jam-jd-ThS">
+                                <rect key="frame" x="207" y="488" width="97" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchStop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rk1-rg-nvu"/>
                                 </connections>
                             </button>
                         </subviews>
